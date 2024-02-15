@@ -1,0 +1,166 @@
+.attribution {font-size: 11px; text-align: center; color: hsl(217, 16%, 45%);}
+    .attribution a { color: hsl(228, 45%, 44%); 
+    text-decoration: none;}
+    footer{
+        display: flex; 
+        justify-content: space-between;
+    }
+    body{
+        background: radial-gradient(ellipse at top, hsl(214, 47%, 23%),hsl(237, 49%, 15%) );
+        background-size: cover;
+    }
+    
+#top{
+    display: flex;
+    outline: solid 2px hsl(217, 16%, 45%);
+    justify-content: space-between;
+    width: 50vw;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 1rem;
+    #score{
+        background-color: hsl(217, 16%, 45%);
+        text-align: center;
+        padding: 1rem 2.5rem;
+        border-radius: 10px;
+        h2{
+            font-size: clamp(1rem,00.5rem,1.5rem);
+            font-family: "Barlow Semi Condensed", sans-serif;
+            font-weight: 600;
+            color: hsl(229, 64%, 46%);
+        }
+        span{
+            font-size: 2rem;
+        }
+    }
+}
+#playArea{
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    .choice{
+        text-align: center;
+        .btn-bg{
+            position: relative;
+        }
+        button:nth-child(2){
+            left: 35vw;
+            top: 35vh;
+            background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 25px, transparent 25px) 0% 0%/30px 30px no-repeat,
+            radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 25px, transparent 25px) 100% 0%/30px 30px no-repeat,
+            radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 25px, transparent 25px) 0% 100%/30px 30px no-repeat,
+            radial-gradient(circle at 0 0, #ffffff 0, #ffffff 25px, transparent 25px) 100% 100%/30px 30px no-repeat,
+            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 60px) no-repeat,
+            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 60px) calc(100% - 10px) no-repeat,
+            linear-gradient(to top, hsl(230, 89%, 62%) 0%,hsl(230, 89%, 65%) 100%);
+            border-radius: 50%;
+            padding: 2rem;
+        }
+        button:nth-child(4){
+            top: 35vh;
+            left: 55vw;
+            background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 25px, transparent 25px) 0% 0%/30px 30px no-repeat,
+            radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 25px, transparent 25px) 100% 0%/30px 30px no-repeat,
+            radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 25px, transparent 25px) 0% 100%/30px 30px no-repeat,
+            radial-gradient(circle at 0 0, #ffffff 0, #ffffff 25px, transparent 25px) 100% 100%/30px 30px no-repeat,
+            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 60px) no-repeat,
+            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 60px) calc(100% - 10px) no-repeat,
+            linear-gradient(to top, hsl(39, 89%, 49%) 0%,hsl(40, 84%, 53%) 100%);
+            border-radius: 50%;
+            padding: 2rem;
+        }
+        button:nth-child(3) {
+           bottom: 10vh;
+           left: 45vw;
+           background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 25px, transparent 25px) 0% 0%/30px 30px no-repeat,
+            radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 25px, transparent 25px) 100% 0%/30px 30px no-repeat,
+            radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 25px, transparent 25px) 0% 100%/30px 30px no-repeat,
+            radial-gradient(circle at 0 0, #ffffff 0, #ffffff 25px, transparent 25px) 100% 100%/30px 30px no-repeat,
+            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 60px) no-repeat,
+            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 60px) calc(100% - 10px) no-repeat,
+            linear-gradient(0deg, hsl(349, 71%, 52%) 0%, hsl(349,70%,56%) 100%);
+            border-radius: 50%;
+            padding: 2rem;
+          }
+    }
+    button{
+        position: absolute;
+        border: solid 1rem transparent;
+        cursor: pointer;
+    }
+
+}
+.rulesBTN{
+    background: transparent;
+    color: hsl(217, 16%, 45%);
+    border: solid 1px hsl(217, 16%, 45%);
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+.result{
+    text-align: center;
+    width: 75vw;
+    margin: 0 auto;
+    margin-bottom: 9vh;
+    .row{
+        display: flex;
+        justify-content: space-between;
+        img{
+            background-color: white;
+            padding: 2rem;
+            border-radius: 50%;
+        }
+    }
+    h1,h2{
+        color:hsl(217, 16%, 45%) ;
+    }
+    .repeat{
+        border-radius: 10px;
+        background-color: hsl(217, 16%, 45%);
+        transform: translateX(-2.5rem);
+    }
+}
+
+@media (max-width:450px) {
+    body{
+        height: 97vh;
+    }
+    #top{
+        width: 75vw;
+        img{
+            width: 50%;
+        }
+    }
+    #playArea{
+        margin-top: 15vh;
+        margin-bottom: 25vh;
+        .choice{
+            button:nth-child(2){
+                left: 10vw;
+                top: 30vh;
+                padding: 1rem;
+            }
+            button:nth-child(4){
+                left: 65vw;
+                top: 30vh;
+                padding: 1rem;
+            }
+            button:nth-child(3){
+                left: 37.5vw;
+                bottom: 30vh;
+                padding: 1rem;
+            }
+        }
+        .result{
+            img{
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+        .repeat{
+            margin: 2rem auto;
+            transform: translateX(-4rem);
+        }
+    }
+}

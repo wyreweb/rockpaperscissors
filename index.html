@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+
+  
+  <!-- 
+  The House Picked
+  
+  You Win
+  You Lose
+  
+  Play Again -->
+  <body>
+    <div id="top">
+    <img src="./images/logo.svg" alt="">
+    <section id="score">
+      <h2>Score</h2>
+      <span class="scoreNum"></span>
+    </section>
+  </div>
+    <section id="playArea">
+      <div class="choice">
+        <img src="./images/bg-triangle.svg" alt="" class="btn-bg">
+        <button class="paper" value="paper"><img src="./images/icon-paper.svg" alt=""></button>
+        <button class="rock" value="rock"><img src="./images/icon-rock.svg" alt=""></button>
+        <button class="scissors" value="scissors"><img src="./images/icon-scissors.svg" alt=""></button>
+      </div>
+      <div class="result" style="display: none;">
+        <h1 class="status"></h1>
+        <div class="row">
+          <div class="You">
+        </div>
+        <div class="AI">
+        </div>
+      </div>
+      <button class="repeat">Play Again</button>
+      </div>
+    </section>
+    <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://wyreweb.com">Wyreweb</a>.
+    </div>
+    <button class="rulesBTN" onclick="rules.showModal()">Rules</button>
+    <dialog id="rules">
+     <button class="close" onclick="rules.close()"><img src="./images/icon-close.svg" alt=""></button>
+     <img src="./images/image-rules.svg" alt="">
+    </dialog>
+  </footer>
+  <script src="./main.js"></script>
+  </body>
+</html>
